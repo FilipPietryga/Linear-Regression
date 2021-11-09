@@ -3,6 +3,10 @@
 #include <exception>
 #include <iterator>
 
+//a custom exception class derivering 
+//from the basic std::exception so that 
+//we can respond to the situation of
+//vectors having different sizes
 class DiffrentSizeVectorsException : public std::exception {
 public:
 	DiffrentSizeVectorsException(const char* error) 
